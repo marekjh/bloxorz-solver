@@ -13,7 +13,6 @@ def main():
         time.sleep(6)
 
 def get_level(filename):
-    print(filename)
     with open(os.path.join("levels", filename)) as f:
         level = json.load(f)
         level["start"] = tuple(level["start"])
