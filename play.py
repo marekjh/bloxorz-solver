@@ -10,7 +10,7 @@ def main():
     for filename in os.listdir("levels"):
         for step in solve(get_level(filename)):
             pyautogui.press(key[step], interval=0.3)
-        time.sleep(8)
+        time.sleep(6)
 
 def get_level(filename):
     print(filename)
